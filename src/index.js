@@ -8,5 +8,20 @@ const path = require('path')
 const URL_API = "https://jsonplaceholder.typicode.com/posts"
 const FILE = 'dados.txt'
 
+function processData(posts){
+    const totalPost = posts.length
+    let tituloBase = ''
 
+    for (const posts of post){
+        if(posts.title.length > tituloBase.length){
+            tituloBase = post.title
+        }
+    }
+
+    const dados = ` Resumo do processamento\n 
+    Total de posts: ${totalPost}\n
+    Titulo mais Logo: ${tituloBase}`
+
+    return dados
+}
 
